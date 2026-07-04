@@ -11,7 +11,7 @@ from .. import miscellaneous_group
 @miscellaneous_group.register(
     schema_id="chainner:image:distance_to_alpha",
     name="Distance to Alpha",
-    description="Converts a distance field to an alpha mask.",
+    description="Converts a distance field to an alpha mask by adjusting the image contrast.",
     icon="MdBlurOn",
     inputs=[
         ImageInput(channels=1),
