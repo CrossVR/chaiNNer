@@ -51,7 +51,7 @@ def binary_sdf(img: np.ndarray, spread: float, cutoff: float) -> np.ndarray:
     signed_distance[img1 == 0] = cutoff - white_dist.ravel()[img1 == 0] / spread / 2
 
     signed_distance = np.clip(signed_distance, 0, 1)
-    out[:, :, -1] = signed_distance.reshape(img.shape)[:, :, 0]
+    out[:, :, -1] = signed_distance.reshape(img.shape)
     return out
 
 
